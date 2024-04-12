@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="siteFunctions.js"></script>
+    <script src="Hint.js"></script>
     <link rel="icon" href="FishIcon.png">
 
 
@@ -31,6 +32,15 @@
         <input type="text" id="passkey" placeholder="Skriv koden her">
         <button class="ok-button" onclick="checkPasskey()">Verifiser Koden</button>
 
+    </div>
+
+    <a href="#" onclick="showHint();return false;" class="hint-link">Trykk her for hjelp til å løse koden!</a>
+
+    <div id="hintPopup" class="hint-popup">
+        <div class="hint-content">
+            <img src="RuneAlphabet.png" alt="Hint Image" class="hint-image">
+            <button onclick="closeHint()" class="close-hint-button">Lukk</button>
+        </div>
     </div>
 
 </body>
